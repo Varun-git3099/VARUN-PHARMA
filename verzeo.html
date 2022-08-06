@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<link rel="stylesheet" href="verzeo.css">
+<title> VARUN PHARMA</title>
+</head>
+<body>
+<div class="navbar" id="navbar">
+<nav>
+  <ul>
+    <div class="image" id="image1">
+    <li><a><img src="E:\Verzeo Project\Company logo 1.jpg" alt="company logo" height="80px" width="90px"></a></li>
+    </div>
+    <li><a href="#"><b>Home</b></a></li>
+    <li><a href="#"><b>About us</b></a></li>
+    <div class="dropdown">
+     <button class="dropbtn"><b>What We Offer</b>
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+       <a href="#">Doctors</a>
+       <a href="#">Medicines</a>
+       <a href="#">Consultancy on Medicines/Doctors</a>
+     </div>
+   </div>
+   <li><a href="#"><b>Help</b></a></li>
+   <li><a href="#"><b>Contact Us</b></a></li>
+   <li><a href="#"><b>SignIn/SignUp</b></a></li>
+   <div class="search">
+     <input type="text" placeholder="Search this Website">
+</div>
+  </ul>
+</nav>
+</div>
+<div class="paraone" id="para1">
+  <span><h3>Stay Healthy and Stay Safe!!</h3></span>
+  <div class="image">
+    <img src="E:\Verzeo Project\tumblr_411618045aacbd6757cae36bd7112a8d_4ad8da6d_1280.gif" alt="health" height="500px" width="700px">
+  </div>
+  <p1>The One stop Solution for the patients from all over India to concern with<br>the Specialised doctors in virtual mode<br> what ever problem you have.. Discuss with India's Best doctors<br>and get medicines at your doorstep.</p1>
+  </div>
+  <section class="counters">
+  			<div class="container">
+  				<div>
+  					<div class="counter" data-target="200000">0</div>
+  					<h3>Happy Customers</h3>
+</section>
+</div>
+<div class="paratwo" id="para2">
+  <p2>We help you to connect with India's Best Doctors to get Consultancy on your health issues<br> and after consultancy get prescribed medicines at your door step.<br>Fix virtual appointments with the Doctors..</p2>
+  <h2>Our Reviews</h2>
+</div>
+<div class="container">
+  <div class="item" id="item-1"><b>Review 1</b> <br><b>Varun, Ranchi</b><br> <br>It was really helpful when i was suffering from fever This website helped me to get concern with best doctors who gave me suggestions and prescribed medicines through which I recovered very fast</div>
+  <div class="item" id="item-2"><b>Review 2</b><br><b>Isha, Kolkata</b><br><br>It was really helpful when i was suffering from fever This website helped me to get concern with best doctors who gave me suggestions and prescribed medicines through which I recovered very fast</div>
+  <div class="item" id="item-3"><b>Review 3</b><br><b>Rahul, Chandigarh</b><br><br>It was really helpful when i was suffering from fever This website helped me to get concern with best doctors who gave me suggestions and prescribed medicines through which I recovered very fast</div>
+  <div class="item" id="item-4"><b>Review 4</b><br><b>Prerna, Jaipur</b><br><br>It was really helpful when i was suffering from fever This website helped me to get concern with best doctors who gave me suggestions and prescribed medicines through which I recovered very fast</div>
+</div>
+<form>
+  <div class="form1">
+    <label for="exampleName" class="form-label"><b>Name:</b></label>
+    <input type="text" class="form-control" id="exampleName">
+    </div>
+    <br>
+  <div class="form1">
+    <label for="exampleInputEmail1" class="form-label"><b>Email Address:</b></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="EmailHelp">
+    <div id="EmailHelp" class="form-text">we will never share your email with anyone else</div>
+  </div>
+<br>
+  <div class="form1">
+    <label for="exampleInputPhonenumber" class="form-label"><b>Phone Number:</b></label>
+    <input type="number" class="form-control" id="exampleInputPhonenumber">
+    </div>
+<br>
+    <div class="form1">
+        <b>Gender:</b> <b>Male</b> <input type="radio" name="myGender"> <b>Female</b> <input type="radio" name="myGender">
+        <b>Other</b> <input type="radio" name="myGender">
+ </div>
+ <br>
+ <div class="form1 form-check">
+   <input type="checkbox" class="form-check-input" id="examplecheck1">
+   <label class="form-check-label" for="examplecheck1"><b>All deatils are correct</b></label>
+ </div>
+ <br>
+       <div class="form1">
+           <b>Health Description:</b> <br><textarea name="myText" cols="20" rows="5"></textarea>
+       </div>
+       <br>
+       <br>
+         <button type="submit" class="btn btn-primary" id="submit1"><b>submit</b></button>
+  </form>
+  <div class="image" id="image3">
+  <img src="E:\Verzeo Project\10513126-health-related-words-concept-in-tag-cloud.webp" alt="health" height="450px" width="450px">
+</div>
+<br><br>
+<button type="button" id="knowMore">Know More</button>
+<div class="parathree" id="para3">
+  <h2>Our Mission</h2>
+  <p3>Our Mission is to provide health related helps to the people those who have lack of resources at their Doorstep<br>in cheapest Prices.<b>Varun Pharma Pvt. Ltd.</b> want to bring a huge change in the world of Medical..<br><b>For more details contact Us</b></p3>
+</div>
+<div class="parafour" id="para4">
+<p4>Copyright © 2022 <b>VARUN PHARMA Pvt. Ltd.</b>. All rights reserved.<br>Designed by <b>VARUN KUMAR.</b></p4>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#x2191;</button>
+
+<script>/*for Customers counting*/
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // The lower the slower
+
+counters.forEach(counter => {
+	const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
+
+		// Lower inc to slow and higher to slow
+		const inc = target / speed;
+
+		// console.log(inc);
+		// console.log(count);
+
+		// Check if target is reached
+		if (count < target) {
+			// Add inc to count and output in counter
+			counter.innerText = count + inc;
+			// Call function every ms
+			setTimeout(updateCount, 1);
+		} else {
+			counter.innerText = target;
+		}
+	};
+
+	updateCount();
+});
+
+</script>
+
+
+<script>/*for upward scroll button*/
+mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
